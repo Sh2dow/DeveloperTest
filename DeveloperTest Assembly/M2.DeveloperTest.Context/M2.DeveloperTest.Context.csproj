@@ -54,9 +54,9 @@
     <Compile Include="DeveloperTest.cs" />
     <Compile Include="EntityConfiguration.cs" />
     <Compile Include="MigrationsContextFactory.cs" />
-    <Compile Include="Migrations\201703251801055_InitialDatabase.cs" />
-    <Compile Include="Migrations\201703251801055_InitialDatabase.Designer.cs">
-      <DependentUpon>201703251801055_InitialDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\201704211959328_Initial.cs" />
+    <Compile Include="Migrations\201704211959328_Initial.Designer.cs">
+      <DependentUpon>201704211959328_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ParticipantConfiguration.cs" />
@@ -85,8 +85,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703251801055_InitialDatabase.resx">
-      <DependentUpon>201703251801055_InitialDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704211959328_Initial.resx">
+      <DependentUpon>201704211959328_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

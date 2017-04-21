@@ -3,7 +3,7 @@ namespace M2.DeveloperTest.Context.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialDatabase : DbMigration
+    public partial class Initial : DbMigration
     {
         public override void Up()
         {
@@ -20,14 +20,14 @@ namespace M2.DeveloperTest.Context.Migrations
                         City = c.String(nullable: false, maxLength: 100),
                         State = c.String(nullable: false, maxLength: 50),
                         Zip = c.String(nullable: false, maxLength: 25),
+                        Email = c.String(nullable: false, maxLength: 100),
                         Version = c.Binary(nullable: false, fixedLength: true, timestamp: true, storeType: "rowversion"),
                         CreatedBy = c.String(nullable: false, maxLength: 255),
                         CreatedDate = c.DateTime(nullable: false),
                         LastModifiedBy = c.String(nullable: false, maxLength: 255),
                         LastModifiedDate = c.DateTime(nullable: false),
                         Active = c.Boolean(nullable: false),
-                        Email = c.String(nullable: false, maxLength: 100)
-                })
+                    })
                 .PrimaryKey(t => t.ParticipantId);
             
         }

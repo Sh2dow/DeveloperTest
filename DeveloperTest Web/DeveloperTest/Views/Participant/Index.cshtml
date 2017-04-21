@@ -14,12 +14,14 @@
             <th>City</th>
             <th>State</th>
             <th>Zip</th>
+            <th>Email</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
         @if (Model.Any())
         {
-            for(int counter = 0; counter < Model.Count(); counter++)
+            for (int counter = 0; counter < Model.Count(); counter++)
             {
                 DeveloperTest.Models.Participant.Index participant = Model.Skip(counter).Take(1).Single();
                 <tr>
@@ -29,6 +31,8 @@
                     <td>@participant.City</td>
                     <td>@participant.State</td>
                     <td>@participant.Zip</td>
+                    <td>@participant.Email</td>
+                    <td class="btn">@(Html.ActionLink("View", "Details", "Participant", new { email = participant.Email }, null))</td>
                 </tr>
             }
         }

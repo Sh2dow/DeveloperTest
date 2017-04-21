@@ -44,6 +44,13 @@ namespace M2.DeveloperTest.Facade
                     select participant).ToList();
         }
 
+        public M2.DeveloperTest.Entities.Participant GetParticipant(string participantEmail)
+        {
+            return (from participant in this._context.Participants
+                    where participant.Email == participantEmail
+                    select participant).SingleOrDefault();
+        }
+
         #endregion
 
         #region Helper Methods

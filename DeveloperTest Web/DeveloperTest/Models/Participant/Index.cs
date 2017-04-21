@@ -16,5 +16,7 @@ namespace DeveloperTest.Models.Participant
         public string State { get; set; }
         
         public string Zip { get; set; }
+
+        public string Email { get; set; }
     }
 }

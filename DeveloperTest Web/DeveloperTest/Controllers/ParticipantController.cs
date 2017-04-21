@@ -45,6 +45,7 @@ namespace DeveloperTest.Controllers
                 participant.City = add.City;
                 participant.State = add.State;
                 participant.Zip = add.Zip;
+                participant.Email = add.Email;
 
                 ParticipantFacade.Add(participant);
 
@@ -70,11 +71,21 @@ namespace DeveloperTest.Controllers
                                                             LastName = p.LastName,
                                                             City = p.City,
                                                             State = p.State,
-                                                            Zip = p.Zip
+                                                            Zip = p.Zip,
+                                                            Email = p.Email
                                                         })
                                                         .ToList();
             
             return View(indexes);
+        }
+
+        public ActionResult Details(string email)
+        {
+            // Get all our participants from the repository and convert them
+            // to a list of our index view model.
+            M2.DeveloperTest.Entities.Participant participant = ParticipantFacade.GetParticipant(email);
+
+            return View(participant);
         }
     }
 }

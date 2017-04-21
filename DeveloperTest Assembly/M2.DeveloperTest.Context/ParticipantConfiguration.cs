@@ -22,6 +22,7 @@ namespace M2.DeveloperTest.Context
             Property(j => j.City).IsRequired().HasMaxLength(100);
             Property(j => j.State).IsRequired().HasMaxLength(50);
             Property(j => j.Zip).IsRequired().HasMaxLength(25);
+            Property(j => j.Email).IsRequired().HasMaxLength(100);
         }
     }
 }

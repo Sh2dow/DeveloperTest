@@ -26,7 +26,7 @@ namespace M2.DeveloperTest.Context.Migrations
                         LastModifiedBy = c.String(nullable: false, maxLength: 255),
                         LastModifiedDate = c.DateTime(nullable: false),
                         Active = c.Boolean(nullable: false),
-                        Email = c.String(nullable: false, maxLength: 50)
+                        Email = c.String(nullable: false, maxLength: 100)
                 })
                 .PrimaryKey(t => t.ParticipantId);
             

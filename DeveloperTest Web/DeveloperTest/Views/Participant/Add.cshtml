@@ -1,0 +1,77 @@
+﻿@model DeveloperTest.Models.Participant.Add
+
+@{
+    ViewBag.Title = "Add Participant";
+}
+@section Scripts {
+    @Scripts.Render("~/Scripts/participantbundle")
+}
+<h2>Add Participant</h2>
+@using (Html.BeginForm(nameof(DeveloperTest.Controllers.ParticipantController.Add), "Participant", FormMethod.Post, new { @class = "form-horizontal", id = "add-form" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(model => model.FirstName, new { @class="col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(model => model.FirstName, new { maxlength = 50, @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.LastName, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(model => model.LastName, new { maxlength = 50, @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.LastName)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Gender, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.EnumDropDownListFor(model => model.Gender, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Gender)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.AddressLine1, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(model => model.AddressLine1, new { maxlength = 200, @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.AddressLine1)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.AddressLine2, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(model => model.AddressLine2, new { maxlength = 200, @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.AddressLine2)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.City, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(model => model.City, new { maxlength = 100, @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.City)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.State, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.DropDownListFor(model => model.State, Model.StateList, string.Empty, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.State)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Zip, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(model => model.Zip, new { maxlength = 25, @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Zip)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            @Html.ActionLink("Cancel", nameof(DeveloperTest.Controllers.ParticipantController.Index), null, new { @class = "btn btn-danger" })
+            <input type="submit" value="Save" class="btn btn-success" />
+        </div>
+    </div>
+}
+
+
+

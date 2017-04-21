@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DeveloperTest.Models.Participant.Index>
+@{
+    ViewBag.Title = "Participants";
+}
+
+<h2>Participants</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Any())
+        {
+            for(int counter = 0; counter < Model.Count(); counter++)
+            {
+                DeveloperTest.Models.Participant.Index participant = Model.Skip(counter).Take(1).Single();
+                <tr>
+                    <td>@(counter + 1)</td>
+                    <td>@participant.FirstName</td>
+                    <td>@participant.LastName</td>
+                    <td>@participant.City</td>
+                    <td>@participant.State</td>
+                    <td>@participant.Zip</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6">No participants exist.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.ActionLink("Add Participant", nameof(DeveloperTest.Controllers.ParticipantController.Add), null, new { @class = "btn btn-primary" })
+

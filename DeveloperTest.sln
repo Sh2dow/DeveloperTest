@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeveloperTest Web", "DeveloperTest Web", "{DA66877C-4F65-4553-9DA0-345294916F99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeveloperTest Assembly", "DeveloperTest Assembly", "{46BEFC05-5A51-423F-820F-C9876A3DA903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2.DeveloperTest.Context", "DeveloperTest Assembly\M2.DeveloperTest.Context\M2.DeveloperTest.Context.csproj", "{BE58C057-B39B-481D-84DD-4B86D0BB0E58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2.DeveloperTest.Entities", "DeveloperTest Assembly\M2.DeveloperTest.Entities\M2.DeveloperTest.Entities.csproj", "{81EB127E-9433-45F3-A216-3275C34E9BDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2.DeveloperTest.Facade", "DeveloperTest Assembly\M2.DeveloperTest.Facade\M2.DeveloperTest.Facade.csproj", "{26C8D423-1EC6-47F0-9CFB-2CDB0647B088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2.DeveloperTest.Enumerators", "DeveloperTest Assembly\M2.DeveloperTest.Enumerators\M2.DeveloperTest.Enumerators.csproj", "{D7DDD02B-5D49-4361-ACBF-044FC72534C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2.DeveloperTest.Constants", "DeveloperTest Assembly\M2.DeveloperTest.Constants\M2.DeveloperTest.Constants.csproj", "{BD0664B2-2C1D-4114-A792-419968E59EF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2.DeveloperTest.Interfaces", "DeveloperTest Assembly\M2.DeveloperTest.Interfaces\M2.DeveloperTest.Interfaces.csproj", "{52CBD2FC-BD98-43A2-B765-584314B1F953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperTest", "DeveloperTest Web\DeveloperTest\DeveloperTest.csproj", "{C2865906-FCE6-4818-8F98-E26202708729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2.DeveloperTest.ModelBinders", "DeveloperTest Assembly\M2.DeveloperTest.ModelBinders\M2.DeveloperTest.ModelBinders.csproj", "{DF413D1B-3561-4E5E-B7AD-D12E9DA714D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE58C057-B39B-481D-84DD-4B86D0BB0E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE58C057-B39B-481D-84DD-4B86D0BB0E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE58C057-B39B-481D-84DD-4B86D0BB0E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE58C057-B39B-481D-84DD-4B86D0BB0E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81EB127E-9433-45F3-A216-3275C34E9BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EB127E-9433-45F3-A216-3275C34E9BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EB127E-9433-45F3-A216-3275C34E9BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EB127E-9433-45F3-A216-3275C34E9BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C8D423-1EC6-47F0-9CFB-2CDB0647B088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C8D423-1EC6-47F0-9CFB-2CDB0647B088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26C8D423-1EC6-47F0-9CFB-2CDB0647B088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26C8D423-1EC6-47F0-9CFB-2CDB0647B088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7DDD02B-5D49-4361-ACBF-044FC72534C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7DDD02B-5D49-4361-ACBF-044FC72534C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7DDD02B-5D49-4361-ACBF-044FC72534C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7DDD02B-5D49-4361-ACBF-044FC72534C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD0664B2-2C1D-4114-A792-419968E59EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0664B2-2C1D-4114-A792-419968E59EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0664B2-2C1D-4114-A792-419968E59EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0664B2-2C1D-4114-A792-419968E59EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CBD2FC-BD98-43A2-B765-584314B1F953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CBD2FC-BD98-43A2-B765-584314B1F953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CBD2FC-BD98-43A2-B765-584314B1F953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CBD2FC-BD98-43A2-B765-584314B1F953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2865906-FCE6-4818-8F98-E26202708729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2865906-FCE6-4818-8F98-E26202708729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2865906-FCE6-4818-8F98-E26202708729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2865906-FCE6-4818-8F98-E26202708729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF413D1B-3561-4E5E-B7AD-D12E9DA714D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF413D1B-3561-4E5E-B7AD-D12E9DA714D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF413D1B-3561-4E5E-B7AD-D12E9DA714D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF413D1B-3561-4E5E-B7AD-D12E9DA714D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE58C057-B39B-481D-84DD-4B86D0BB0E58} = {46BEFC05-5A51-423F-820F-C9876A3DA903}
+		{81EB127E-9433-45F3-A216-3275C34E9BDD} = {46BEFC05-5A51-423F-820F-C9876A3DA903}
+		{26C8D423-1EC6-47F0-9CFB-2CDB0647B088} = {46BEFC05-5A51-423F-820F-C9876A3DA903}
+		{D7DDD02B-5D49-4361-ACBF-044FC72534C9} = {46BEFC05-5A51-423F-820F-C9876A3DA903}
+		{BD0664B2-2C1D-4114-A792-419968E59EF4} = {46BEFC05-5A51-423F-820F-C9876A3DA903}
+		{52CBD2FC-BD98-43A2-B765-584314B1F953} = {46BEFC05-5A51-423F-820F-C9876A3DA903}
+		{C2865906-FCE6-4818-8F98-E26202708729} = {DA66877C-4F65-4553-9DA0-345294916F99}
+		{DF413D1B-3561-4E5E-B7AD-D12E9DA714D5} = {46BEFC05-5A51-423F-820F-C9876A3DA903}
+	EndGlobalSection
+EndGlobal

@@ -32,7 +32,7 @@
                     <td>@participant.State</td>
                     <td>@participant.Zip</td>
                     <td>@participant.Email</td>
-                    <td class="btn">@(Html.ActionLink("View", "Details", "Participant", new { email = participant.Email }, null))</td>
+                    <td>@(Html.ActionLink("View", "Details", "Participant", new { email = participant.Email }, null))</td>
                 </tr>
             }
         }

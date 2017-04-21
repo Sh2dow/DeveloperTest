@@ -4,67 +4,58 @@
     ViewBag.Title = "Participant Details";
 }
 <h2>Participant Details</h2>
-    <div class="form-group">
+    <div>
         @Html.LabelFor(model => model.FirstName, new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(model => model.FirstName, new { maxlength = 50, @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.FirstName)
+            @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", @readonly = true })
         </div>
     </div>
-    <div class="form-group">
+    <div>
         @Html.LabelFor(model => model.LastName, new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(model => model.LastName, new { maxlength = 50, @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.LastName)
+            @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @readonly = true })
         </div>
     </div>
-    <div class="form-group">
+    <div>
         @Html.LabelFor(model => model.Gender, new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(model => model.Gender, new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Gender)
+            @Html.TextBoxFor(model => model.Gender, new { @class = "form-control", @readonly = true })
         </div>
     </div>
-    <div class="form-group">
+    <div>
         @Html.LabelFor(model => model.AddressLine1, new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(model => model.AddressLine1, new { maxlength = 200, @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.AddressLine1)
+            @Html.TextBoxFor(model => model.AddressLine1, new { @class = "form-control", @readonly = true })
         </div>
     </div>
-    <div class="form-group">
+    <div>
         @Html.LabelFor(model => model.AddressLine2, new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(model => model.AddressLine2, new { maxlength = 200, @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.AddressLine2)
+            @Html.TextBoxFor(model => model.AddressLine2, new { @class = "form-control", @readonly = true })
         </div>
     </div>
-    <div class="form-group">
+    <div>
         @Html.LabelFor(model => model.City, new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(model => model.City, new { maxlength = 100, @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.City)
+            @Html.TextBoxFor(model => model.City, new { @class = "form-control", @readonly = true })
         </div>
     </div>
-    <div class="form-group">
+    <div>
         @Html.LabelFor(model => model.State, new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(model => model.State, string.Empty, new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.State)
+            @Html.TextBoxFor(model => model.State, string.Empty, new { @class = "form-control", @readonly = true })
         </div>
     </div>
-    <div class="form-group">
+    <div>
         @Html.LabelFor(model => model.Zip, new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(model => model.Zip, new { maxlength = 25, @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Zip)
+            @Html.TextBoxFor(model => model.Zip, new { @class = "form-control", @readonly = true })
         </div>
     </div>
-    <div class="form-group">
+    <div>
         @Html.LabelFor(model => model.Email, new { @class = "col-sm-2 control-label" })
         <div class="col-sm-10">
-            @Html.TextBoxFor(model => model.Email, new { maxlength = 25, @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Email)
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @readonly = true })
         </div>
     </div>
 
